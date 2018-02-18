@@ -1,0 +1,66 @@
+.level-slider{
+    position: relative;
+    margin-top: 40px;
+    border-top: 2px solid #2f1b15;
+
+    &__handle{
+        position: absolute;
+        top: -18px;
+        left: 0;
+        width: 17px;
+        height: 14px;
+        background: url('/common.blocks/level-slider/__handle.png') no-repeat center;
+        cursor: pointer;
+    }
+
+    &__steps{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__step{
+        font-size: 13px;
+        color: #2f1b15;
+        line-height: 19px;
+        font-weight: bold;
+        position: relative;
+        padding-top: 30px;
+
+        &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            width: 2px;
+            background: #2f1b15;
+        }
+    }
+
+    &__step_first{
+        width: 20%;
+
+        &:before{
+            left: 0;
+            height: 25px;
+        }
+    }
+
+    &__step_middle{
+        width: 30%;
+
+        &:before{
+            left: 0;
+            height: 10px;
+        }
+    }
+
+    &__step_last{
+        width: 30%;
+        text-align: right;
+
+        &:before{
+            right: 0;
+            height: 25px;
+        }
+    }
+}
