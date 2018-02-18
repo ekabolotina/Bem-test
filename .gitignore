@@ -1,0 +1,19 @@
+node_modules/
+.DS_Store
+.idea
+.project
+.svn
+npm-debug.log
+
+.editorconfig
+
+# bem
+.bem
+.bem/cache/
+.enb/tmp/
+*bundles*/*/*.*
+*bundles*/*/*.html
+!*bundles*/.bem/*
+*pages*/*/*.*
+!*pages*/*/*.html
+!*pages*/.bem/*
