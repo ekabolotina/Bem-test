@@ -1,0 +1,5 @@
+.personal-form{
+    &__input{
+        width: 100%;
+    }
+}

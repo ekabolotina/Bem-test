@@ -91,9 +91,5 @@
     &__label-input{
         display: block;
         flex-grow: 2;
-
-        .form__input{
-            width: 100%;
-        }
     }
 }
