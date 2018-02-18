@@ -1,5 +1,7 @@
 .footer-form{
     &__input{
-        width: 210px;
+        width: 195px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
