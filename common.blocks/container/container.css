@@ -1,0 +1,12 @@
+.container{
+    width: 770px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+    &__col_size{
+        &_12{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.main-wrapper{
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+    background: url('/common.blocks/main-wrapper/bg.png');
+    position: relative;
+    padding: 160px 0 70px 0;
+    min-height: 100vh;
+
+    &__stamp{
+        position: absolute;
+        top: 45px;
+        right: 55px;
+    }
+}
