@@ -1,0 +1,18 @@
+.abilities-form{
+    margin-top: 15px;
+
+    &__label{
+        font-size: 21px;
+        color: #000;
+        position: relative;
+        padding-left: 30px;
+        margin-top: 10px;
+        cursor: pointer;
+
+        .form__checkbox{
+            position: absolute;
+            left: 0;
+            top: -5px;
+        }
+    }
+}
