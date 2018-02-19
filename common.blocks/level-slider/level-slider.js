@@ -34,8 +34,8 @@ function __levelSlider_moveTo(pos){
         return;
     }
     if(pos > levelSlider_width - $levelSlider__handle.clientWidth){
-        $levelSlider__handle.style.left = (levelSlider_width - $levelSlider__handle.clientWidth) + 'px';
+        $levelSlider__handle.style.left = (levelSlider_width - $levelSlider__handle.clientWidth) / levelSlider_width * 100 + '%';
         return;
     }
-    $levelSlider__handle.style.left = pos + 'px';
+    $levelSlider__handle.style.left = pos / levelSlider_width * 100 + '%';
 }
