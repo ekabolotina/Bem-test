@@ -1,18 +1,29 @@
-var $form__labels =  document.querySelectorAll('.form .form__label');
+var $form = '.form',
+    $form__labels = document.querySelectorAll($form + ' .form__label'),
+    $forms = document.querySelectorAll($form);
 
-for(i = 0; i < $form__labels.length; i++){
-    var $label = $form__labels[i],
-        $checkbox = $form__labels[i].querySelector('.form__checkbox');
-        $radio = $form__labels[i].querySelector('.form__radio');
 
-    if($checkbox){
-        if($checkbox.className.split(' ').includes('form__checkbox_checked'))
-            $checkbox.querySelector('input[type=checkbox]').setAttribute('checked', 'checked');
+for(var i = 0; i < $forms.length; i++){
+    var $form = $forms[i];
 
-        $label.onclick = function(e){
-            e.preventDefault();
-            var $checkbox = this.querySelector('.form__checkbox'),
-                $checkboxInput = $checkbox.querySelector('input[type=checkbox]');
+    $form.onclick = function(e){
+        e.preventDefault();
+        
+        var target = e.target;
+        while(target.className && !target.className.split(' ').includes('.form')){
+            if(target.tagName === 'LABEL') break;
+            target = target.parentNode;
+        }
+
+        if(target.tagName !== 'LABEL') return;
+
+        var $form__labels = $form.querySelectorAll(' .form__label'),
+            $label = target,
+            $checkbox = $label.querySelector('.form__checkbox'),
+            $radio = $label.querySelector('.form__radio');
+
+        if($checkbox){
+            var $checkboxInput = $checkbox.querySelector('input[type=checkbox]');
 
             if($checkbox.className.split(' ').includes('form__checkbox_checked')){
                 $checkbox.className = $checkbox.className.replace(/\bform__checkbox_checked\b/g, '');
@@ -20,18 +31,11 @@ for(i = 0; i < $form__labels.length; i++){
             }else{
                 $checkbox.className += ' form__checkbox_checked';
                 $checkboxInput.setAttribute('checked', 'checked');
-            }
-        }        
-    }
+            }                
+        }
 
-    if($radio){
-        if($radio.className.split(' ').includes('form__radio_checked'))
-            $radio.querySelector('input[type=radio]').setAttribute('checked', 'checked');
-
-        $label.onclick = function(e){
-            e.preventDefault();
-            var $radio = this.querySelector('.form__radio'),
-                $radioInput = $radio.querySelector('input[type=radio]'),
+        if($radio){
+            var $radioInput = $radio.querySelector('input[type=radio]'),
                 $radios = $radioInput.form.querySelectorAll('.form__radio');
             
             for(var i = 0; i < $radios.length; i++){
@@ -42,6 +46,6 @@ for(i = 0; i < $form__labels.length; i++){
 
             $radio.className += ($radio.className ? ' ' : '') + ' form__radio_checked';
             $radioInput.setAttribute('checked', 'checked');
-        }  
+        }
     }
 }
