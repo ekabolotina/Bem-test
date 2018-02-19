@@ -21,3 +21,13 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .container{
+        display: block;
+
+        &__col{
+            width: 100% !important;
+        }
+    }
+}

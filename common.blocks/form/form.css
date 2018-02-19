@@ -26,6 +26,12 @@
         height: 60px;
     }
 
+    @media (max-width: 768px) {
+        &__input{
+            font-size: 20px;
+        }
+    }
+
     &__checkbox{
         width: 24px;
         height: 28px;
@@ -58,6 +64,12 @@
         background: url('/common.blocks/form/form_line.png');
     }
 
+    @media (max-width: 768px) {
+        &__textarea{
+            font-size: 20px;
+        }
+    }    
+
     &__radio{
         width: 27px;
         height: 27px;
@@ -83,9 +95,22 @@
         align-items: flex-end;
     }
 
+    @media (max-width: 768px) {
+        &__label_row{
+            display: block;
+        }
+    }
+
     &__label-title{
         display: block;
         padding-right: 15px;
+    }
+
+    @media (max-width: 768px) {
+        &__label-title{
+            position: relative;
+            top: 10px;
+        } 
     }
 
     &__label-input{
