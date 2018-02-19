@@ -1,8 +1,11 @@
 .container{
     width: 770px;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
 
     &__col_size{
         &_12{
