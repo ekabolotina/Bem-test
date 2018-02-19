@@ -1,0 +1,358 @@
+.page{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+.body{
+    margin: 0;
+    padding: 0;
+    background: #797979;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.main-wrapper{
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+    background: url('/common.blocks/main-wrapper/bg.png');
+    position: relative;
+    padding: 160px 0 70px 0;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.main-wrapper__stamp{
+    position: absolute;
+    top: 45px;
+    right: 55px;
+}
+
+@media (max-width: 768px) {
+
+    .main-wrapper__stamp{
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 15px;
+    }
+}
+
+.container{
+    width: 770px;
+    max-width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.container__col_size_12{
+    width: 100%;
+}
+
+.container__col_size_4{
+    width: 33.3333%;
+}
+
+.container__col_size_3{
+    width: 25%;
+}
+
+@media (max-width: 768px) {
+    .container{
+        display: block;
+    }
+    .container__col{
+        width: 100% !important;
+    }
+}
+
+.header__title{
+    text-align: center;
+}
+
+.summary__section{
+    margin-top: 55px;
+}
+
+.summary__title{
+    font-size: 24px;
+    font-weight: bold;
+    color: #2f1b15;
+    margin: 0;
+}
+
+.summary__info{
+    font-size: 15px;
+    color: #3d3d3d;
+    line-height: 23px;
+    margin: 5px 0 0 0;
+}
+
+@font-face {
+    font-family: 'Courier New';
+    src: url('/static/fonts/CourierNewPSMT.ttf') format('truetype'),
+        url('/static/fonts/CourierNewPSMT.svg#CourierNewPSMT') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.form__label{
+    display: block;
+    font-size: 22px;
+    color: #2f1b15;
+    font-weight: bold;
+}
+
+.form__input{
+    border: none;
+    font-size: 30px;
+    padding: 10px 15px;
+    font-family: 'Courier New';
+    outline: none;
+    background: transparent;
+    box-sizing: border-box;
+    background: url('/common.blocks/form/form_line.png') no-repeat 0 0;
+    height: 60px;
+}
+
+@media (max-width: 768px) {
+
+    .form__input{
+        font-size: 20px;
+    }
+}
+
+.form__checkbox{
+    width: 24px;
+    height: 28px;
+    background-image: url('/common.blocks/form/form_spritesheet.png');
+    background-position: -5px -5px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+}
+
+.form__checkbox_checked{
+    background-position: -5px -43px;
+}
+
+.form__checkbox input{
+    display: none;
+}
+
+.form__textarea{
+    background: transparent;
+    font-family: 'Courier New';
+    font-size: 30px;
+    line-height: 60px;
+    border: none;
+    resize: none;
+    width: 100%;
+    padding: 0;
+    outline: none;
+    background: url('/common.blocks/form/form_line.png');
+}
+
+@media (max-width: 768px) {
+
+    .form__textarea{
+        font-size: 20px;
+    }
+}
+
+.form__radio{
+    width: 27px;
+    height: 27px;
+    background-image: url('/common.blocks/form/form_spritesheet.png');
+    background-position: -5px -81px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    top: 6px;
+}
+
+.form__radio_checked{
+    background-position: -5px -118px;
+}
+
+.form__radio input{
+    display: none;
+}
+
+.form__label_row{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: end;
+        align-items: flex-end;
+}
+
+@media (max-width: 768px) {
+
+    .form__label_row{
+        display: block;
+    }
+}
+
+.form__label-title{
+    display: block;
+    padding-right: 15px;
+}
+
+@media (max-width: 768px) {
+
+    .form__label-title{
+        position: relative;
+        top: 10px;
+    }
+}
+
+.form__label-input{
+    display: block;
+    -ms-flex-positive: 2;
+        flex-grow: 2;
+}
+
+.personal-form__input{
+    width: 100%;
+}
+
+.abilities-form{
+    margin-top: 15px;
+}
+
+.abilities-form__label{
+    font-size: 21px;
+    color: #000;
+    position: relative;
+    padding-left: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.abilities-form__label .form__checkbox{
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+
+.level-slider{
+    position: relative;
+    padding-top: 40px;
+    background: url('/common.blocks/level-slider/slider_line.png') repeat-x 0 40px;
+    cursor: pointer;
+}
+
+.level-slider__handle{
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 17px;
+    height: 14px;
+    background: url('/common.blocks/level-slider/__handle.png') no-repeat center;
+    cursor: pointer;
+}
+
+.level-slider__steps{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+}
+
+.level-slider__step{
+    font-size: 13px;
+    color: #2f1b15;
+    line-height: 19px;
+    font-weight: bold;
+    position: relative;
+    padding-top: 30px;
+}
+
+@media (max-width: 768px) {
+
+    .level-slider__step{
+        font-size: 11px;
+        line-height: 14px;
+    }
+}
+
+.level-slider__step:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3px;
+    width: 2px;
+    background: #2f1b15;
+}
+
+.level-slider__step_first{
+    width: 20%;
+}
+
+.level-slider__step_first:before{
+    left: 0;
+    height: 25px;
+}
+
+.level-slider__step_middle{
+    width: 30%;
+}
+
+.level-slider__step_middle:before{
+    left: 0;
+    height: 10px;
+}
+
+.level-slider__step_last{
+    width: 30%;
+    text-align: right;
+}
+
+.level-slider__step_last:before{
+    right: 0;
+    height: 25px;
+}
+
+.about-form{
+    margin-top: 25px;
+}
+
+.plans-form{
+    margin-top: 15px;
+}
+
+.plans-form__label{
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .plans-form__label{
+        display: block;
+        margin-right: 0;
+    }
+}
+
+.footer{
+    margin-top: 60px;
+}
+
+.footer-form__input{
+    width: 195px;
+    padding-left: 5px;
+    padding-right: 5px;
+}

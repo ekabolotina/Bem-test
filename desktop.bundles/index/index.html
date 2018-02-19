@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Резюме</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="index.min.css" rel="stylesheet">
+</head>
+<body class="body">
+    
+    <div class="main-wrapper">
+        <img src="/common.blocks/main-wrapper/stamp.png" class="main-wrapper__stamp">
+
+        <header class="header">
+            <div class="container header__content">
+                <div class="container__col container__col_size_12">
+                    <div class="header__title"><img src="/common.blocks/header/__title/title.png"></div>
+                </div>
+            </div>
+        </header>
+
+        <main class="summary">
+            <section class="summary__section">
+                <form class="form container personal-form">
+                    <div class="container__col container__col_size_12">
+                        <label class="form__label form__label_row">
+                            <span class="form__label-title">Полное ФИО</span>
+                            <span class="form__label-input">
+                                <input type="text" name="full_name" class="form__input personal-form__input" value="Иванов Иван Иванович">
+                            </span>
+                        </label>
+                        <label class="form__label form__label_row">
+                            <span class="form__label-title">Год рождения</span>
+                            <span class="form__label-input">
+                                <input type="text" name="birth_year" class="form__input personal-form__input" value="1990">
+                            </span>
+                        </label>
+                        <label class="form__label form__label_row">
+                            <span class="form__label-title">Место жительства</span>
+                            <span class="form__label-input">
+                                <input type="text" name="location" class="form__input personal-form__input" value="г. Иваново, Россия">
+                            </span>
+                        </label>
+                        <label class="form__label form__label_row">
+                            <span class="form__label-title">Скайп</span>
+                            <span class="form__label-input">
+                                <input type="text" name="skype" class="form__input personal-form__input" value="ivanov">
+                            </span>
+                        </label>
+                        <label class="form__label form__label_row">
+                            <span class="form__label-title">Почта</span>
+                            <span class="form__label-input">
+                                <input type="text" name="email" class="form__input personal-form__input" value="ivanov@gmail.com">
+                            </span>
+                        </label>
+                    </div>
+                </form>
+            </section>
+
+            <section class="summary__section">
+                <div class="container">
+                    <div class="container__col container__col_size_12">
+                        <h2 class="summary__title">Расскажите о себе чекбоксами</h2>
+                        <p class="summary__info">Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.</p>
+                    </div> 
+                </div>
+                <form class="form container abilities-form"></form>
+            </section>
+
+            <section class="summary__section">
+                <div class="container">
+                    <div class="container__col container__col_size_12">
+                        <h2 class="summary__title">Уровень владения JavaScript</h2>
+                        <div class="level-slider">
+                            <div class="level-slider__handle"></div>
+                            <div class="level-slider__steps">
+                                <div class="level-slider__step level-slider__step_first">Не владею</div>
+                                <div class="level-slider__step level-slider__step_middle">Использую готовые решения</div>
+                                <div class="level-slider__step level-slider__step_middle">Использую готовые решения и умею их переделывать</div>
+                                <div class="level-slider__step level-slider__step_last">Пишу сложный JS с нуля</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="summary__section">
+                <div class="container">
+                    <div class="container__col container__col_size_12">
+                        <h2 class="summary__title">Расскажите о себе словами</h2>
+                        <p class="summary__info">Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.</p>
+                        <form class="form about-form">
+                            <textarea name="about" class="form__textarea" rows="3">Ну-ууу-уу... Эээ...</textarea></form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="summary__section">
+                <div class="container">
+                    <div class="container__col container__col_size_12">
+                        <h2 class="summary__title">Какие у вас планы на будущее?</h2>
+                        <p class="summary__info">Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.</p>
+                        <form class="form plans-form">
+                            <label class="form__label plans-form__label">
+                                <span class="form__radio form__radio_checked">
+                                    <input type="radio" name="plans" value="Верстать" checked>
+                                </span>
+                                Верстать
+                            </label>
+                            <label class="form__label plans-form__label">
+                                <span class="form__radio">
+                                    <input type="radio" name="plans" value="Прокачиваться в JS">
+                                </span>
+                                Прокачиваться в JS
+                            </label>
+                            <label class="form__label plans-form__label">
+                                <span class="form__radio">
+                                    <input type="radio" name="plans" value="Менеджерство">
+                                </span>
+                                Менеджерство
+                            </label>
+                            <label class="form__label plans-form__label">
+                                <span class="form__radio">
+                                    <input type="radio" name="plans" value="Другое">
+                                </span>
+                                Другое
+                            </label>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="container__col container__col_size_12">
+                    <form class="form footer-form">
+                        <label class="form__label form__label_row">
+                            <span class="form__label-title">Дата заполнения</span>
+                            <span class="form__label-input">
+                                <input type="text" name="date" class="form__input footer-form__input" value="01.01.2016">
+                            </span>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="index.min.js"></script>
+</body>
+</html>
