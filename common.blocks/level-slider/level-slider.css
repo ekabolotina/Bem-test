@@ -1,11 +1,12 @@
 .level-slider{
     position: relative;
-    margin-top: 40px;
-    background: url('/common.blocks/level-slider/slider_line.png') repeat-x 0 0;
+    padding-top: 40px;
+    background: url('/common.blocks/level-slider/slider_line.png') repeat-x 0 40px;
+    cursor: pointer;
 
     &__handle{
         position: absolute;
-        top: -18px;
+        top: 25px;
         left: 0;
         width: 17px;
         height: 14px;
